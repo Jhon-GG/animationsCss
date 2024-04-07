@@ -4,10 +4,18 @@
     background: #09f;
     border-radius: 50%;
     position: relative;
+    animation: move;
+    animation-duration: 3s;
 }
 
-.pulser:hover {
-    scale: 2;
+@keyframes move{
+    from{
+        transform: translateY(0px);
+    }
+
+    to{
+        transform: translateY(100px);
+    }
 }
 
 body{
